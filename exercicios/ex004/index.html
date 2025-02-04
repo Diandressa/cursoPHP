@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação com Formulários</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Apresente-se para nós</h1>
+    </header>
+    <section>
+        <form action="cad.php" method="get">
+            <label for="nome">Nome</label>
+            <!-- O id é mais utilizado para o js e o name para o php, ele manda o name na url ao submeter o form -->
+            <input type="text" name="nome" id="idnome">
+
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="idsobrenome">
+
+            <input type="submit" value="Enviar">
+
+            <!-- O metodo post não é mais seguro, os dados ficam visiveis no http, o que muda é só a forma de envio -->
+        </form>
+    </section>
+</body>
+</html>
